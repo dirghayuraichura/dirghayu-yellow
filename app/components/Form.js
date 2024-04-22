@@ -72,7 +72,7 @@ const Form = () => {
     }
   };
   
-  const handlePushToStaging = async () => {
+  const handlePushTo  = async () => {
     try {
       const selectedPropertiesFormatted = {
         customProperty: selectedProperties.map((propertyName) => {
@@ -96,16 +96,16 @@ const Form = () => {
           },
         }
       );
-      toast.success('Properties pushed to staging successfully!', {
+      toast.success('Properties pushed to   successfully!', {
         onClose: () => {
           window.location.reload(); // Reload the page after the toast is closed
         }
       });
-      //setPushResponse('Properties pushed to staging successfully!');
+      //setPushResponse('Properties pushed to   successfully!');
     } catch (error) {
       console.error('Error pushing properties:', error);
-      toast.error('Error pushing properties to staging.');
-      //setPushResponse('Error pushing properties to staging.');
+      toast.error('Error pushing properties to  .');
+      //setPushResponse('Error pushing properties to  .');
     }
   };
 
@@ -184,10 +184,10 @@ const Form = () => {
                <button
               type="button"
               className="btn btn-primary mt-3"
-              onClick={handlePushToStaging}
+              onClick={handlePushTo }
               disabled={selectedProperties.length === 0}
             >
-              Push to Staging
+              Push 
             </button>
             {pushResponse && <div className="mt-3">{pushResponse}</div>}
           </div>
