@@ -12,7 +12,7 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link href="/push-user-properties" className="nav-link">
-                Push User Properties
+                Push User360 Properties
               </Link>
             </li>
           </ul>
